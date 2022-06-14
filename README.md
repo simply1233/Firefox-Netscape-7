@@ -1,6 +1,8 @@
 # Firefox-Netscape-7
 This is a theme for firefox designed to emulate the look of netscape 7
 
+![Screenshot_2022-06-14_09-48-03](https://user-images.githubusercontent.com/51336658/173633648-7cf7273a-b806-4930-83ab-a302e5d55077.png)
+![firefox7](https://user-images.githubusercontent.com/51336658/173633440-aaed7d9a-e2be-4ff8-b8a9-3c61ba6037c6.png)
 
 
 ## Installation
