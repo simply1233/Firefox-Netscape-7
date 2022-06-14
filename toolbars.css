@@ -1,0 +1,23 @@
+#nav-bar {
+	margin-top: 1px !important;
+	padding: 1px !important;
+	background: linear-gradient(0deg, rgba(177,189,201,1) 0%, rgba(221,227,235,1) 100%) !important;
+	padding-top: 2px !important;
+	border-top: 1px solid #eef0f3 !important;
+	border-bottom: 1px solid #95A0AD !important;
+}
+#main-menubar {
+  -moz-appearance: none !important;
+  background-color: #DDE3EB !important;
+}
+
+#toolbar-menubar {
+  -moz-appearance: none !important;
+  background-color: #DDE3EB !important;
+  border-top: 1px solid #EBF4FF !important;
+}
+@media (prefers-color-scheme: light) {
+  #TabsToolbar {
+	border-top: 1px solid #95A0AD !important;
+  }
+}

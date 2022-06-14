@@ -1,0 +1,289 @@
+@import "icon_size.css";
+
+/* large button mode */
+#main-window:not([customizing]) #nav-bar-customization-target > toolbaritem.chromeclass-toolbar-additional toolbarbutton .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar-customization-target > toolbarbutton .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar > toolbarbutton .toolbarbutton-icon,
+#main-window:not([customizing]) #nav-bar #fxa-toolbar-menu-button .toolbarbutton-badge-stack {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+#main-window:not([customizing]) #nav-bar #fxa-toolbar-menu-button .toolbarbutton-badge-stack .toolbarbutton-icon {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+#main-window:not([customizing]) #nav-bar-customization-target > toolbarbutton :is(.scrollbutton-up,.scrollbutton-down) .toolbarbutton-icon {
+  width: unset !important;
+  height: unset !important;
+}
+
+/* compact */
+#main-window[uidensity=compact]:not([customizing]) #nav-bar-customization-target .webextension-browser-action .toolbarbutton-icon {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+
+/* normal */
+#main-window:not([uidensity=compact]):not([uidensity=touch]) :not([customizing]) #nav-bar-customization-target .webextension-browser-action .toolbarbutton-icon {
+  width: 40x !important;
+  height: 40px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) :not([customizing]) #nav-bar-customization-target {
+  background-size: 40px 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+#main-window:not([uidensity=compact]):not([uidensity=touch]) :not([customizing]) #nav-bar-customization-target {
+  background-size: 40px 40px !important;
+  animation-name: indicatorArrowProgressN !important;
+}
+
+#main-window:not([uidensity=compact]):not([uidensity=touch]):not([customizing]) #nav-bar-customization-target {
+  background-size: 40px 40px !important;
+}
+
+/* touch */
+#main-window[uidensity=touch]:not([customizing]) #nav-bar-customization-target .webextension-browser-action .toolbarbutton-icon {
+  width: 40px !important;
+  height: 40px !important;
+}
+#main-window[uidensity=touch]:not([customizing]) #nav-bar-customization-target {
+  background-size: 40px 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+#main-window[uidensity=touch]:not([customizing]) #nav-bar-customization-target {
+  background-size: 40px 40px !important;
+  animation-name: indicatorArrowProgressTN !important;
+}
+
+#main-window[uidensity=touch]:not([customizing]) #nav-bar-customization-target {
+  background-size: 40px 40px !important;
+}
+
+
+/**/
+@keyframes indicatorArrowProgressN {
+  0% {
+    margin-right: 35px;
+  }
+  100% {
+    margin-right: 1px;
+  }
+}
+
+@keyframes indicatorArrowProgressRTLN {
+  0% {
+    margin-left: 35px;
+  }
+  100% {
+    margin-left: 1px;
+  }
+}
+
+@keyframes indicatorArrowProgressTN {
+  0% {
+    margin-right: 40px;
+  }
+  100% {
+    margin-right: 1px;
+  }
+}
+
+@keyframes indicatorArrowProgressTRTLN {
+  0% {
+    margin-left: 40px;
+  }
+  100% {
+    margin-left: 1px;
+  }
+}
+
+
+toolbar:not(#TabsToolbar) .toolbarbutton-1 .toolbarbutton-badge-stack,
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1,
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton,
+toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1 :-moz-any(.toolbarbutton-icon, .toolbarbutton-text),
+toolbar:not(#TabsToolbar) .toolbarbutton-1 :-moz-any(.toolbarbutton-icon, .toolbarbutton-text),
+toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-moz-any(.toolbarbutton-icon, .toolbarbutton-text){
+	background: unset !important;
+	box-shadow: unset !important;
+}
+
+#main-window[uidensity="compact"] toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([type="menu-button"]),
+#main-window[uidensity="compact"] toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]),
+#main-window[uidensity="compact"] toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
+	-moz-box-orient: horizontal !important;
+}
+
+/*#main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([type="menu-button"]),
+#main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]),
+#main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
+	-moz-box-orient: vertical !important;
+}*/
+
+/*
+Removed pending icon creation:
+#open-file-button
+#save-page-button
+#PanelUI-menu-button
+*/
+
+:-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
+	#sync-button,#feed-button,#e10s-button, #privatebrowsing-button, #preferences-button,
+	#new-window-button,#new-tab-button,#print-button,#fullscreen-button, #add-ons-button, #find-button,
+	#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,#characterencoding-button,
+	/*#tabview-button,#email-link-button,#web-apps-button,#webide-button,*/#sidebar-button,#developer-button,#containers-panelmenu,
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button/*,#alltabs-button*/ ),
+#downloads-button .toolbarbutton-icon {
+	list-style-image: url("images/Toolbar-large.png") !important;
+}
+
+:-moz-any(#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
+	#characterencoding-button,#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
+	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,#add-ons-button,
+	/*#tabview-button,#email-link-button,#web-apps-button,#webide-button,*/#sidebar-button,#developer-button,#containers-panelmenu,
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button/*,#alltabs-button*/ ) .toolbarbutton-icon {
+	padding: 0px !important;
+}
+
+#main-window #back-button .toolbarbutton-icon {
+	padding: 0px !important;
+}
+
+toolbar toolbaritem .toolbarbutton-1[disabled] .toolbarbutton-text,
+toolbar .toolbarbutton-1[disabled]:not([type="menu-button"]) .toolbarbutton-text,
+toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbutton-text{
+	opacity: 0.6 !important;
+}
+
+#nav-bar .toolbarbutton-1 {
+	min-height: 20px !important;
+	margin-bottom: 2px !important;
+	padding-left: 2px !important;
+	padding-right: 2px !important;
+	/*border: 1px solid transparent !important;*/
+	margin-right: 2px !important;
+} 
+
+/*#main-window:not([uidensity="compact"]) #nav-bar .toolbarbutton-1 > .toolbarbutton-text {
+	display: -moz-box !important;
+	margin-top: -5px !important;
+}*/
+
+#nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+	border: none !important;
+	border-radius: 0px !important;
+	margin: 0px !important;
+}
+
+#PanelUI-button, #PanelUI-overflow-button {
+	margin: 0px !important;
+	border: none !important;
+	padding: 0px !important;
+	max-width: 20px !important;
+}
+
+#PanelUI-menu-button .toolbarbutton-icon {
+	margin: -5px !important;
+	border: none !important;
+	padding: 0px !important;
+	max-width: 30px !important;
+	width: 30px !important;
+}
+
+
+.toolbarbutton-animatable-box {
+	display: none !important;
+}
+
+#TabsToolbar toolbarbutton:not([id="tabs-newtab-button"]) {
+	background: unset !important;
+	border-radius: 0 !important;
+	margin: 0px !important;
+}
+
+#TabsToolbar toolbarbutton:not([id="tabs-newtab-button"]) .toolbarbutton-1,
+#TabsToolbar toolbarbutton:not([id="tabs-newtab-button"]) .toolbarbutton-badge-stack {
+	background: unset !important;
+	border-radius: 0 !important;
+	border: none !important;
+	margin: 0px !important;
+	max-height: 22px !important;
+	max-width: 22px !important;
+}
+
+.tab-close-button,
+.tab-icon-sound {
+	margin-top: -1px !important;
+	margin-right: 0px !important;
+	padding: 1px !important;
+	max-height: 20px !important;
+	max-width: 20px !important;
+}
+
+#tabs-newtab-button {
+  -moz-image-region: rect(2px, 16px, 16px, 1px) !important;
+  list-style-image: url("images/newtab.png") !important;
+}
+
+}
+
+#tabs-newtab-button .toolbarbutton-icon {
+	height: 24px !important;
+	width: 24px !important;
+	padding: 3px !important;
+}
+
+/*#main-window[uidensity="compact"] #back-button {
+	padding: 0px !important;
+	margin-right: -4px !important;
+}
+
+#main-window[uidensity="compact"] #back-button .toolbarbutton-icon {
+	padding: 5px !important;
+}*/
+
+/*#main-window[uidensity="compact"] #back-button > .toolbarbutton-text,
+#main-window[uidensity="compact"] #library-button > .toolbarbutton-text,
+#main-window[uidensity="compact"] #history-panelmenu > .toolbarbutton-text {
+	display: -moz-box !important;
+	margin-left: -5px !important;
+}*/
+
+/*#main-window:not([uidensity="compact"]) #back-button .toolbarbutton-icon {
+	display: -moz-box !important;
+	margin-bottom: -3px !important;
+	margin-top: -3px !important;
+	border-radius: 0px !important;
+}*/
+
+#PlacesChevron {
+		max-height: 10px !important;
+		padding: 0px !important; 
+}
+
+toolbar:not(#TabsToolbar) #stop-button .toolbarbutton-animatable-image,
+toolbar:not(#TabsToolbar) #reload-button .toolbarbutton-animatable-image {
+	visibility: collapse !important;
+}
+
+toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button > .toolbarbutton-icon,
+toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displaystop] + #stop-button > .toolbarbutton-icon {
+	fill: unset !important;
+}
+
+:-moz-any(#downloads-indicator-anchor, #downloads-indicator-progress-area, downloads-button),
+#panic-button:not([open]),#pocket-button:not([open]) {
+	list-style-image: url("images/Toolbar-large.png") !important;
+	margin: -5px !important;
+	border: none !important;
+	padding: 0px !important;
+	max-width: 30px !important;
+	width: 30px !important;
+}

@@ -1,0 +1,49 @@
+@import "icons.css";
+@import "toolbars.css";
+@import "locationbar";
+@import "urlbar.css";
+/* Tabs */
+@import "./hacks/classic_squared_tabs.css";
+@import "./hacks/tabs_below_navigation_toolbar.css";
+@import "./configs/custom_tab_color_settings.css";
+@import "./configs/custom_tab_text_settings.css";
+@import "./hacks/tab_throbber_grey_classic.css";
+@import "./configs/color_variables.css";
+/* Close Button */
+@import "./hacks/close_icon_netscape7.css";
+@import "./hacks/identitybox_padlock_icon.css";
+
+#main-window {
+	background-color: #dde3eb !important;
+	color: #000 !important;
+}
+
+:root:not([uidensity="compact"]) #back-button > .toolbarbutton-icon {
+	width: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+	height: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+}
+
+@media (-moz-proton) {
+	:root {
+		--tab-min-height: 28px !important;
+		--proton-tab-block-margin: 0px !important;
+	}
+
+	#urlbar-input-container {
+		height: 26px !important;
+		padding-top: 4px !important;
+	}
+
+	.tab-close-button {
+		height: auto !important;
+	}
+
+	.tabbrowser-tab {
+		min-height: inherit !important;
+	}
+
+	.urlbar-page-action,
+	.urlbar-page-action image {
+		padding: 0 !important;
+	}
+}

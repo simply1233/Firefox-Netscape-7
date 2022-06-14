@@ -1,0 +1,45 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/*******************************************/
+/* default tab *****************************/
+
+/* text color */
+.tabbrowser-tab .tab-label {
+  color: black !important;
+}
+
+/*******************************************/
+/* selected tab ****************************/
+
+/* text color */
+.tabbrowser-tab[selected] .tab-label {
+  color: black !important;
+}
+
+/*******************************************/
+/* busy/loading tab ************************/
+
+/* text color *//*
+.tabbrowser-tab[busy] .tab-label {
+  color: #9933CC !important;
+}
+
+/*******************************************/
+/* hovered tab ****************************/
+
+/* text color *//*
+.tabbrowser-tab:hover:not([selected]) .tab-label {
+  color: black !important;
+}
+
+/*******************************************/
+/* unloaded/pending tab ********************/
+
+/* text color */
+.tabbrowser-tab[pending] .tab-label {
+  color: black !important;
+}
+
+/**/
